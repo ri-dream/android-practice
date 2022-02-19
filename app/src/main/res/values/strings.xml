@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Practice</string>
+    <string name="hello_world">こんにちは、世界！</string>
 </resources>
