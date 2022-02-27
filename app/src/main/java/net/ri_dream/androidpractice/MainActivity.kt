@@ -3,6 +3,7 @@ package net.ri_dream.androidpractice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             val toast = Toast.makeText(this@MainActivity,
             Date().toString(), Toast.LENGTH_LONG)
             toast.show()
+            Log.d("CurrentTime", Date().toString())
         }
     }
 
