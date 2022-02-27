@@ -6,6 +6,7 @@ import android.os.PersistableBundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,8 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         val btnCurrent = findViewById<Button>(R.id.btnCurrent)
         btnCurrent.setOnClickListener {
-            val txtResult = findViewById<TextView>(R.id.txtResult)
-            txtResult.text = Date().toString()
+            val toast = Toast.makeText(this@MainActivity,
+            Date().toString(), Toast.LENGTH_LONG)
+            toast.show()
         }
     }
 
